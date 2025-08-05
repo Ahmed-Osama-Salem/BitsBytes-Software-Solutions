@@ -16,7 +16,7 @@ import Testimonial from "@/components/Testimonial";
 export const metadata: Metadata = {
   title: "BitsBytes | Software Development & Digital Solutions",
   icons: {
-    icon: "/favicon.ico",
+    icon: "/images/favicon.ico",
   },
   description:
     "BitsBytes is a cutting-edge software development company delivering custom digital solutions, mobile apps, and web platforms tailored to your business needs.",
@@ -35,9 +35,9 @@ export default function Home() {
       <CTA />
       <FAQ />
       <Testimonial />
-      <Pricing />
+      {/* <Pricing /> */}
       <Contact />
-      <Blog />
+      {/* <Blog /> */}
     </main>
   );
 }

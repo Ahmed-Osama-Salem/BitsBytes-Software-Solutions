@@ -3,18 +3,18 @@ import { FAQ } from "@/types/faq";
 const faqData: FAQ[] = [
   {
     id: 1,
-    quest: "Lorem ipsum dolor sit amet, consectetur",
-    ans: "We provide digital experience services to startups and small businesses. We help our clients succeed by creating brand identities, digital experiences.",
+    quest: "What services does BitsBytes offer?",
+    ans: "BitsBytes offers custom software development, mobile app development, website design & development, and tailored digital solutions for startups, SMEs, and enterprises.",
   },
   {
     id: 2,
-    quest: "Lorem ipsum dolor sit amet, consectetur",
-    ans: "We provide digital experience services to startups and small businesses. We help our clients succeed by creating brand identities, digital experiences.",
+    quest: "Do you provide support and maintenance after project ?",
+    ans: "Yes, we offer ongoing support, maintenance, and updates to ensure your product remains secure, scalable, and up-to-date after deployment.",
   },
   {
     id: 3,
-    quest: "Lorem ipsum dolor sit amet, consectetur",
-    ans: "We provide digital experience services to startups and small businesses. We help our clients succeed by creating brand identities, digital experiences.",
+    quest: "How long does it take to develop a project?",
+    ans: "The timeline depends on the project size and complexity. On average, small projects take 2–4 weeks, while larger platforms may take 2–3 months. We’ll provide a detailed timeline after the discovery phase.",
   },
 ];
 

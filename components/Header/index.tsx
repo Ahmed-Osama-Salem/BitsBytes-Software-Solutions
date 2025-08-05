@@ -35,7 +35,7 @@ const Header = () => {
           : ""
       }`}
     >
-      <div className="max-w-c-1390 relative mx-auto h-[40px] items-center justify-between px-4 md:px-8 xl:flex 2xl:px-0">
+      <div className="max-w-c-1390 relative mx-auto h-[50px] items-center justify-between px-4 md:px-8 lg:h-[40px] xl:flex 2xl:px-0">
         <div className="flex w-full items-center justify-between xl:w-1/4">
           <a href="/">
             <div className="relative h-20 w-28">

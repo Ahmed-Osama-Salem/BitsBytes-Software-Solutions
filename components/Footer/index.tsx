@@ -5,8 +5,8 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <>
-      <footer className="border-t border-stroke bg-white dark:border-strokedark dark:bg-blacksection">
-        <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
+      <footer className="border-stroke dark:border-strokedark dark:bg-blacksection border-t bg-white">
+        <div className="max-w-c-1390 mx-auto px-4 md:px-8 2xl:px-0">
           {/* <!-- Footer Top --> */}
           <div className="py-20 lg:py-25">
             <div className="flex flex-wrap gap-8 lg:justify-between lg:gap-0">
@@ -29,34 +29,31 @@ const Footer = () => {
                 className="animate_top w-1/2 lg:w-1/4"
               >
                 <a href="/" className="relative">
-                  <Image
-                    width={110}
-                    height={80}
-                    src="/images/logo/logo-light.svg"
-                    alt="Logo"
-                    className="dark:hidden"
-                  />
-                  <Image
-                    width={110}
-                    height={80}
-                    src="/images/logo/logo-dark.svg"
-                    alt="Logo"
-                    className="hidden dark:block"
-                  />
+                  <div className="relative h-20 w-28">
+                    <Image
+                      src="/images/logo/logo-light.png"
+                      alt="logo"
+                      fill
+                      // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      className="h-20 w-28 scale-[2]"
+                    />
+                  </div>
                 </a>
 
-                <p className="mb-10 mt-5">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                <p className="mt-5 mb-10">
+                  We’re here to help you build the future of your business with
+                  our innovative software solutions. Let’s work together to
+                  achieve your goals.
                 </p>
 
-                <p className="mb-1.5 text-sectiontitle uppercase tracking-[5px]">
+                <p className="text-sectiontitle mb-1.5 tracking-[5px] uppercase">
                   contact
                 </p>
                 <a
                   href="#"
                   className="text-itemtitle font-medium text-black dark:text-white"
                 >
-                  hello@solid.com
+                  ahmedosamaweb@gmail.com
                 </a>
               </motion.div>
 
@@ -79,7 +76,7 @@ const Footer = () => {
                   viewport={{ once: true }}
                   className="animate_top"
                 >
-                  <h4 className="mb-9 text-itemtitle2 font-medium text-black dark:text-white">
+                  <h4 className="text-itemtitle2 mb-9 font-medium text-black dark:text-white">
                     Quick Links
                   </h4>
 
@@ -87,7 +84,7 @@ const Footer = () => {
                     <li>
                       <a
                         href="#"
-                        className="mb-3 inline-block hover:text-primary"
+                        className="hover:text-primary mb-3 inline-block"
                       >
                         Home
                       </a>
@@ -95,25 +92,9 @@ const Footer = () => {
                     <li>
                       <a
                         href="#"
-                        className="mb-3 inline-block hover:text-primary"
+                        className="hover:text-primary mb-3 inline-block"
                       >
                         Product
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        className="mb-3 inline-block hover:text-primary"
-                      >
-                        Careers
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        className="mb-3 inline-block hover:text-primary"
-                      >
-                        Pricing
                       </a>
                     </li>
                   </ul>
@@ -137,7 +118,7 @@ const Footer = () => {
                   viewport={{ once: true }}
                   className="animate_top"
                 >
-                  <h4 className="mb-9 text-itemtitle2 font-medium text-black dark:text-white">
+                  <h4 className="text-itemtitle2 mb-9 font-medium text-black dark:text-white">
                     Support
                   </h4>
 
@@ -145,7 +126,7 @@ const Footer = () => {
                     <li>
                       <a
                         href="#"
-                        className="mb-3 inline-block hover:text-primary"
+                        className="hover:text-primary mb-3 inline-block"
                       >
                         Company
                       </a>
@@ -153,7 +134,7 @@ const Footer = () => {
                     <li>
                       <a
                         href="#"
-                        className="mb-3 inline-block hover:text-primary"
+                        className="hover:text-primary mb-3 inline-block"
                       >
                         Press media
                       </a>
@@ -161,7 +142,7 @@ const Footer = () => {
                     <li>
                       <a
                         href="#"
-                        className="mb-3 inline-block hover:text-primary"
+                        className="hover:text-primary mb-3 inline-block"
                       >
                         Our Blog
                       </a>
@@ -169,7 +150,7 @@ const Footer = () => {
                     <li>
                       <a
                         href="#"
-                        className="mb-3 inline-block hover:text-primary"
+                        className="hover:text-primary mb-3 inline-block"
                       >
                         Contact Us
                       </a>
@@ -195,7 +176,7 @@ const Footer = () => {
                   viewport={{ once: true }}
                   className="animate_top"
                 >
-                  <h4 className="mb-9 text-itemtitle2 font-medium text-black dark:text-white">
+                  <h4 className="text-itemtitle2 mb-9 font-medium text-black dark:text-white">
                     Newsletter
                   </h4>
                   <p className="mb-4 w-[90%]">
@@ -207,7 +188,7 @@ const Footer = () => {
                       <input
                         type="text"
                         placeholder="Email address"
-                        className="w-full rounded-full border border-stroke px-6 py-3 shadow-solid-11 focus:border-primary focus:outline-hidden dark:border-strokedark dark:bg-black dark:shadow-none dark:focus:border-primary"
+                        className="border-stroke shadow-solid-11 focus:border-primary dark:border-strokedark dark:focus:border-primary w-full rounded-full border px-6 py-3 focus:outline-hidden dark:bg-black dark:shadow-none"
                       />
 
                       <button
@@ -215,7 +196,7 @@ const Footer = () => {
                         className="absolute right-0 p-4"
                       >
                         <svg
-                          className="fill-[#757693] hover:fill-primary dark:fill-white"
+                          className="hover:fill-primary fill-[#757693] dark:fill-white"
                           width="20"
                           height="20"
                           viewBox="0 0 20 20"
@@ -244,7 +225,7 @@ const Footer = () => {
           {/* <!-- Footer Top --> */}
 
           {/* <!-- Footer Bottom --> */}
-          <div className="flex flex-col flex-wrap items-center justify-center gap-5 border-t border-stroke py-7 dark:border-strokedark lg:flex-row lg:justify-between lg:gap-0">
+          <div className="border-stroke dark:border-strokedark flex flex-col flex-wrap items-center justify-center gap-5 border-t py-7 lg:flex-row lg:justify-between lg:gap-0">
             <motion.div
               variants={{
                 hidden: {
@@ -301,7 +282,7 @@ const Footer = () => {
               className="animate_top"
             >
               <p>
-                &copy; {new Date().getFullYear()} Solid. All rights reserved
+                &copy; {new Date().getFullYear()} BitsBytes. All rights reserved
               </p>
             </motion.div>
 
@@ -327,7 +308,7 @@ const Footer = () => {
                 <li>
                   <a href="#" aria-label="social icon">
                     <svg
-                      className="fill-[#D1D8E0] transition-all duration-300 hover:fill-primary"
+                      className="hover:fill-primary fill-[#D1D8E0] transition-all duration-300"
                       width="24"
                       height="24"
                       viewBox="0 0 24 24"
@@ -351,7 +332,7 @@ const Footer = () => {
                 <li>
                   <a href="#" aria-label="social icon">
                     <svg
-                      className="fill-[#D1D8E0] transition-all duration-300 hover:fill-primary"
+                      className="hover:fill-primary fill-[#D1D8E0] transition-all duration-300"
                       width="24"
                       height="24"
                       viewBox="0 0 24 24"
@@ -375,7 +356,7 @@ const Footer = () => {
                 <li>
                   <a href="#" aria-label="social icon">
                     <svg
-                      className="fill-[#D1D8E0] transition-all duration-300 hover:fill-primary"
+                      className="hover:fill-primary fill-[#D1D8E0] transition-all duration-300"
                       width="24"
                       height="24"
                       viewBox="0 0 24 24"
@@ -399,7 +380,7 @@ const Footer = () => {
                 <li>
                   <a href="#" aria-label="social icon">
                     <svg
-                      className="fill-[#D1D8E0] transition-all duration-300 hover:fill-primary"
+                      className="hover:fill-primary fill-[#D1D8E0] transition-all duration-300"
                       width="24"
                       height="24"
                       viewBox="0 0 24 24"

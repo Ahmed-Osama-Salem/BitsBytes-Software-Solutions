@@ -3,27 +3,33 @@ import { FeatureTab } from "@/types/featureTab";
 const featuresTabData: FeatureTab[] = [
   {
     id: "tabOne",
-    title: "Solid Has Neat & Clean User Interface.",
-    desc1: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies lacus non fermentum ultrices. Fusce consectetur le.`,
-    desc2: `    Nam id eleifend dui, id iaculis purus. Etiam lobortis neque nec finibus sagittis. Nulla ligula nunc egestas ut.`,
+    title: "Clean & Modern User Interface",
+    desc1:
+      "Our platform is designed with a sleek, intuitive interface that enhances user experience and improves productivity.",
+    desc2:
+      "From responsive layouts to dark mode support, every detail is crafted to provide a smooth and elegant workflow.",
     image: "/images/features/features-light-01.png",
     imageDark: "/images/features/features-dark-01.svg",
   },
   {
     id: "tabTwo",
-    title: "Ready to Use Pages You Need for a SaaS Business.",
-    desc1: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies lacus non fermentum ultrices. Fusce consectetur le.`,
-    desc2: `    Nam id eleifend dui, id iaculis purus. Etiam lobortis neque nec finibus sagittis. Nulla ligula nunc egestas ut.`,
-    image: "/images/features/features-light-01.png",
-    imageDark: "/images/features/features-dark-01.svg",
+    title: "Pre-built Pages for SaaS Applications",
+    desc1:
+      "Accelerate development with ready-to-use pages for authentication, pricing, blogs, and dashboards.",
+    desc2:
+      "All pages follow best UI/UX practices and are optimized for performance and accessibility.",
+    image: "/images/features/features-light-02.png",
+    imageDark: "/images/features/features-dark-02.svg",
   },
   {
     id: "tabThree",
-    title: "Functional Blog, DB, Auth and Many More",
-    desc1: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies lacus non fermentum ultrices. Fusce consectetur le.`,
-    desc2: `Nam id eleifend dui, id iaculis purus. Etiam lobortis neque nec finibus sagittis. Nulla ligula nunc egestas ut.`,
-    image: "/images/features/features-light-01.png",
-    imageDark: "/images/features/features-dark-01.svg",
+    title: "Integrated Blog, Authentication, and Database",
+    desc1:
+      "Our boilerplate includes full blog functionality, secure user authentication, and database integration out of the box.",
+    desc2:
+      "Easily extend or customize these features to suit your business needs without starting from scratch.",
+    image: "/images/features/features-light-03.png",
+    imageDark: "/images/features/features-dark-03.svg",
   },
 ];
 
