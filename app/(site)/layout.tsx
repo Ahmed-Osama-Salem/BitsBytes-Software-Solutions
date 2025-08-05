@@ -10,6 +10,7 @@ import "../globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 import ToasterContext from "../context/ToastContext";
+import Head from "next/head";
 
 export default function RootLayout({
   children,
@@ -17,21 +18,26 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={`dark:bg-black ${inter.className}`}>
-        <ThemeProvider
-          enableSystem={false}
-          attribute="class"
-          defaultTheme="light"
-        >
-          <Lines />
-          <Header />
-          <ToasterContext />
-          {children}
-          <Footer />
-          <ScrollToTop />
-        </ThemeProvider>
-      </body>
-    </html>
+    <>
+      <html lang="en" suppressHydrationWarning>
+        <Head>
+          <link rel="icon" href="/favicon.ico" sizes="any" />
+        </Head>
+        <body className={`dark:bg-black ${inter.className}`}>
+          <ThemeProvider
+            enableSystem={false}
+            attribute="class"
+            defaultTheme="light"
+          >
+            <Lines />
+            <Header />
+            <ToasterContext />
+            {children}
+            <Footer />
+            <ScrollToTop />
+          </ThemeProvider>
+        </body>
+      </html>
+    </>
   );
 }
