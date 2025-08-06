@@ -224,20 +224,31 @@ const About = () => {
               whileInView="visible"
               transition={{ duration: 0.5, delay: 0.1 }}
               viewport={{ once: true }}
-              className="animate_left relative mx-auto hidden aspect-[588/526.5] md:block md:w-1/2"
+              className="animate_left relative hidden md:block md:w-1/2"
             >
-              <Image
-                src="/images/about/about-light-01.png"
-                alt="About"
-                className="dark:hidden"
-                fill
-              />
-              <Image
-                src="/images/about/about-dark-01.png"
-                alt="About"
-                className="hidden dark:block"
-                fill
-              />
+              <a
+                href="https://kw.waseet.net"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <div className="relative aspect-[588/526.5] w-full overflow-hidden rounded-2xl shadow-lg">
+                  <Image
+                    src="/images/about/about-light-01.png"
+                    alt="Waseet.net Kuwait"
+                    fill
+                    className="object-cover transition-transform duration-300 hover:scale-105 dark:hidden"
+                    priority
+                  />
+                  <Image
+                    src="/images/about/about-light-01.png"
+                    alt="Waseet.net Kuwait"
+                    fill
+                    className="hidden object-cover transition-transform duration-300 hover:scale-105 dark:block"
+                    priority
+                  />
+                </div>
+              </a>
             </motion.div>
 
             <motion.div
@@ -257,16 +268,41 @@ const About = () => {
               <h2 className="xl:text-hero relative mb-6 text-3xl font-bold text-black dark:text-white">
                 Waseet.net –{" "}
                 <span className="before:bg-titlebg dark:before:bg-titlebgdark relative inline-block before:absolute before:bottom-2.5 before:left-0 before:-z-1 before:h-3 before:w-full">
-                  Full E-commerce Ecosystem
+                  Kuwait's E-commerce Gateway
                 </span>
               </h2>
-              <p>
-                Built for <strong>ALShayeji Group</strong>, Waseet.net is a
-                complete e-commerce platform. We developed the mobile app (iOS &
-                Android), web frontend, backend, and admin panel. The solution
-                supports real-time inventory, secure checkout, user dashboards,
-                and multi-language features.
+              <p className="text-body-color dark:text-body-color-dark mb-4 text-base">
+                Developed for <strong>AlShayeji Group</strong>,{" "}
+                <strong>kw.waseet.net</strong> is a modern, scalable e-commerce
+                platform tailored for the Kuwaiti market. Our team delivered the
+                complete ecosystem—including mobile apps (iOS & Android), web
+                frontend, backend services, and a custom admin dashboard.
               </p>
+              <p className="text-body-color dark:text-body-color-dark text-base">
+                The platform supports real-time inventory management,
+                multi-language UX, secure checkout, and personalized customer
+                dashboards—empowering both vendors and buyers in a seamless
+                digital experience.
+              </p>
+
+              <div>
+                <a
+                  href="https://kw.waseet.net/ar"
+                  className="group hover:text-primary dark:hover:text-primary mt-7.5 inline-flex items-center gap-2.5 text-black dark:text-white"
+                >
+                  <span className="duration-300 group-hover:pr-2">
+                    Know More
+                  </span>
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="currentColor"
+                  >
+                    <path d="M10.4767 6.16701L6.00668 1.69701L7.18501 0.518677L13.6667 7.00034L7.18501 13.482L6.00668 12.3037L10.4767 7.83368H0.333344V6.16701H10.4767Z" />
+                  </svg>
+                </a>
+              </div>
             </motion.div>
           </div>
         </div>
@@ -346,6 +382,103 @@ const About = () => {
                 className="hidden dark:block"
                 fill
               />
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== Project Three: adelpharma ===== */}
+      <section className="overflow-hidden pb-20 lg:pb-25 xl:pb-30">
+        <div className="max-w-c-1235 mx-auto px-4 md:px-8 xl:px-0">
+          <div className="flex items-center gap-8 lg:gap-32.5">
+            <motion.div
+              variants={{
+                hidden: { opacity: 0, x: -20 },
+                visible: { opacity: 1, x: 0 },
+              }}
+              initial="hidden"
+              whileInView="visible"
+              transition={{ duration: 0.5, delay: 0.1 }}
+              viewport={{ once: true }}
+              className="animate_left relative hidden md:block md:w-1/2"
+            >
+              <a
+                href="https://adelpharma.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <div className="relative aspect-[588/526.5] w-full overflow-hidden rounded-2xl shadow-lg">
+                  <Image
+                    src="/images/about/about-light-03.png"
+                    alt="About Adel Pharma"
+                    fill
+                    className="object-cover dark:hidden"
+                    priority
+                  />
+                  <Image
+                    src="/images/about/about-light-03.png"
+                    alt="About Adel Pharma"
+                    fill
+                    className="hidden object-cover dark:block"
+                    priority
+                  />
+                </div>
+              </a>
+            </motion.div>
+
+            <motion.div
+              variants={{
+                hidden: { opacity: 0, x: 20 },
+                visible: { opacity: 1, x: 0 },
+              }}
+              initial="hidden"
+              whileInView="visible"
+              transition={{ duration: 0.5, delay: 0.1 }}
+              viewport={{ once: true }}
+              className="animate_right md:w-1/2"
+            >
+              <span className="font-medium text-black uppercase dark:text-white">
+                About the Client
+              </span>
+              <h2 className="xl:text-hero relative mb-6 text-3xl font-bold text-black dark:text-white">
+                Adel Pharma –{" "}
+                <span className="before:bg-titlebg dark:before:bg-titlebgdark relative inline-block before:absolute before:bottom-2.5 before:left-0 before:-z-1 before:h-3 before:w-full">
+                  Pharmaceutical Excellence
+                </span>
+              </h2>
+              <p className="text-body-color dark:text-body-color-dark mb-4 text-base">
+                Adel Pharma is a privately held pharmaceutical company based in
+                Saudi Arabia, committed to providing high-quality, affordable
+                healthcare solutions. With a focus on research, development, and
+                manufacturing, Adel Pharma ensures the highest standards in
+                production and distribution of pharmaceutical products across
+                the region.
+              </p>
+              <p className="text-body-color dark:text-body-color-dark text-base">
+                The company’s mission is to enhance quality of life through
+                innovative medicines, strong partnerships, and a deep commitment
+                to scientific advancement and patient care.
+              </p>
+
+              <div>
+                <a
+                  href="https://adelpharma.com"
+                  className="group hover:text-primary dark:hover:text-primary mt-7.5 inline-flex items-center gap-2.5 text-black dark:text-white"
+                >
+                  <span className="duration-300 group-hover:pr-2">
+                    Know More
+                  </span>
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="currentColor"
+                  >
+                    <path d="M10.4767 6.16701L6.00668 1.69701L7.18501 0.518677L13.6667 7.00034L7.18501 13.482L6.00668 12.3037L10.4767 7.83368H0.333344V6.16701H10.4767Z" />
+                  </svg>
+                </a>
+              </div>
             </motion.div>
           </div>
         </div>
